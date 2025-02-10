@@ -1,0 +1,83 @@
+.Youtube{
+    background-color: red;
+    color: white;
+    font-size: large;  
+    border-color: white;
+    border: none;
+    vertical-align: top;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 1s;
+}
+
+.Youtube:hover{
+    opacity: 0.6;
+}
+
+.Youtube:active{
+    opacity:0.4;
+}
+
+.Join{
+    border-color: blue;
+    font-size: large;
+    color: rgb(0, 132, 255);
+    padding: 9px 20px;
+    vertical-align: top;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.7s
+}
+
+.Join:hover{
+    background-color: rgb(0, 97, 176);
+    color:white;
+}
+
+.Tweet{
+    background-color: rgb(0, 132, 255);
+    padding: 10px 20px;
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+}
+
+.Tweet:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4)
+}
+
+.OneTwo{
+    background-color: rgb(0, 162, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: large;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+
+.OneTwo:hover{
+    padding: 5px 20px;
+}
+
+.stretch{
+    background-color: rgb(255, 255, 20);
+    border-width: 2px;
+    padding: 8px 20px;
+    font-size: large;
+    margin-left: 10px;
+    margin-top:20px;
+    transition: 0.7s;
+}
+
+.stretch:hover{
+    padding: 12px 30px;
+}
