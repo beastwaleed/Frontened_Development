@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bent - Digital Designer</title>
+    <link rel="shortcut icon"
+        href="https://images-platform.99static.com//-BADzO0zTsNWdwfPkyqlUvD9x7U=/199x139:974x914/fit-in/500x500/99designs-contests-attachments/151/151380/attachment_151380426"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <button class="menu">Menu</button>
+    </div>
+    <div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenu">&times;</button>
+  <ul class="menu-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+    <div class="main">
+        <h1>Bent Lindberg <br>Digital Designer</h1>
+        <div class="scroll">
+            <h3>(Berlin,Germany)</h3>
+            <h4><i class="ri-arrow-right-down-line"></i><a href="#about">Scroll Down</a></h4>
+        </div>
+    </div>
+    <div class="imageContainer"></div>
+
+    <div id="about" class="about">
+        <h3 class="leftAbout">
+            As a digital designer, I focus on producing top-notch and impactful digital experiences.
+        </h3>
+        <div class="rightAbout">
+            <h3>(About Me)</h3>
+            <div class="icons">
+                <i class="ri-linkedin-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-dribbble-line"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="leftPart">
+            <h3>(What I do)</h3>
+            <i class="ri-arrow-right-down-line"></i>
+        </div>
+        <div class="rightPart">
+            <div class="up">
+                <div class="up1">
+                    <h3>Digital Design</h3>
+                    <p>
+                        I create stunning digital designs that engage and inspire your audience. Let me bring your brand
+                        to life with my skills.
+                    </p>
+                </div>
+                <div class="up2">
+                    <h3>Art Direction</h3>
+                    <p>
+                        My art direction expertise ensures that your project is on brand, on message, and visually
+                        stunning. Let's tell your story together.
+                    </p>
+                </div>
+            </div>
+            <div class="down">
+                <div class="down1">
+                    <h3>Interaction Design</h3>
+                    <p>
+                        I specialize in designing intuitive user experiences that are both functional and beautiful.
+                    </p>
+                </div>
+                <div class="down2">
+                    <h3>Motion Design</h3>
+                    <p>
+                        I create dynamic motion graphics to enhance storytelling and bring energy to your digital
+                        presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <h4>(Connect)</h4>
+        <h2>Let's Talk</h2>
+        <button>Get in Touch</button>
+    </div>
+
+</body>
+
+<script>
+    const menuBtn = document.querySelector('.menu');
+    const closeBtn = document.getElementById('closeMenu');
+    const menuOverlay = document.getElementById('fullscreenMenu');
+
+    menuBtn.addEventListener('click', () => {
+        menuOverlay.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        menuOverlay.classList.remove('active');
+    });
+</script>
+
+</html>
