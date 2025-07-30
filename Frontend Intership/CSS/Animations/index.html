@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            height: 20vh;
+            background-color: bisque;
+        }
+
+        .box{
+            background-color: rgb(0, 239, 76);
+            width: 60px;
+            height: 60px;
+     
+            animation: BoxAnimation 2s cubic-bezier(0.08, 0.82, 0, 1.54) 0s infinite alternate-reverse ;
+        }
+
+        @keyframes BoxAnimation {
+            from{
+
+            }
+            to{
+                translate: 120px;
+                transform: rotate(45deg);
+            }
+        }
+
+        .container2{
+            display: flex; 
+            justify-content: center;
+            align-items:center;
+            height: 30vh;
+            background-color: blueviolet;
+        }
+
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            padding: 5px;
+            height: 20px;
+            width: 90px;
+            background-color: rgb(230, 251, 0);
+        }
+
+        .box2:hover{
+            animation: ExpandAnimation 0.6s alternate 1s forwards ;
+        }
+
+         @keyframes ExpandAnimation {
+            from{
+
+            }
+            
+            to{
+                background-color: white;
+                padding-right: 30px;
+
+            }            
+         }
+
+
+         .container3{
+            height: 50vh;
+            background-color: gainsboro;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+         }
+
+         .container3 p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left:-50px;
+         }
+
+        
+         .boxone{
+            display: flex;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            z-index: 1;
+            background-color: red;
+            margin-right: 100px;
+            animation: Box1Anim 3s ease-in alternate-reverse infinite;
+
+         }
+
+         .boxtwo{
+            display: flex;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            z-index: 2;
+            background-color: blue;
+            margin-top: 100px;
+            animation: Box2Anim 3s ease-in alternate-reverse infinite;
+
+
+         }
+
+         .boxthree{
+            display: flex;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            z-index:3;
+            background-color: green;
+            margin-right: 100px;
+            margin-top: 100px;
+            animation: Box3Anim 3s ease-in alternate-reverse infinite;
+
+
+
+         }
+
+         .boxfour{
+             position: absolute;
+            display: flex;
+            height: 50px;
+            width: 50px;
+            z-index:3;
+            background-color: yellow;
+            animation: Box4Anim 3s ease-in alternate-reverse infinite;
+
+         }
+
+
+         @keyframes Box1Anim {
+            from{
+
+            }
+            to{
+                transform: rotate(45deg);
+                translate: -100px; 
+            }
+         }
+
+         @keyframes Box2Anim {
+            from{
+
+            }
+            to{
+                transform: rotate(95deg) translate(70px);         
+              }
+         }
+
+         @keyframes Box3Anim {
+            from{
+
+            }
+            to{
+                transform: rotate(190deg) translate(50px);         
+              }
+         }
+
+         @keyframes Box4Anim {
+            from{
+
+            }
+            to{
+                transform: rotate(-90deg) translate(50px);         
+              }
+         }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Animation 1</p>
+            <div class="box">
+                Box1
+            </div>
+        </div>
+        Animation 2
+        <div class="container2">
+            <div class="box2">
+                Hover Me
+            </div>
+        </div>
+
+        Animation 3
+        <div class="container3">
+          <p>Waleed</p>
+            <div class="boxone"></div>
+            <div class="boxtwo"></div>
+            <div class="boxthree"></div>
+            <div class="boxfour"></div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .cards{
+            padding-top:50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .single-card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .single-card img{
+            height:100px;
+            width:100px;
+            border-radius: 400px;
+            margin-top:20px;
+        }
+
+        .single-card h1 {
+            padding-top:30px;
+
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .single-card h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #a33400;
+        }
+
+
+        .single-card p {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.6;
+        }
+
+
+        .single-card:hover{
+            background-color: rgb(255, 230, 177);
+            border: 1px solid black;
+            rotate: -5deg;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+    <div class="single-card">
+        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <h1>Jason Doe</h1>
+        <div class="line">-------------------</div>
+        <h2>Designer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, perferendis!</p>
+    </div>
+
+    <div class="single-card">
+        <img src="Waleed passport.jpg">
+        <h1>Waleed Afzal</h1>
+        <div class="line">-------------------</div>
+
+        <h2>Web Developer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, perferendis!</p>
+    </div>
+
+    <div class="single-card">
+        <img src="https://cdn.jss.org.au/wp-content/uploads/2024/01/31145309/Man-Box-hero-scaled.jpg">
+        <h1>Smith David</h1>
+        <div class="line">-------------------</div>
+        <h2>Intern</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, perferendis!</p>
+    </div>
+
+</div>
+
+</body>
+</html>
