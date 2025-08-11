@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Document</title>
+
+
+    <style>
+
+        body{
+            background-color: #edde86;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            font-family:"Roboto",san-serif;
+        }
+
+        .main{
+            background-color: white;
+            height: 500px;
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: start;
+            gap:20px;
+            padding: 10px;
+            background-color: #ebebeb;
+            border-bottom: 1px solid gray; 
+        }
+
+        .profile{
+            height: 60px;
+            border-radius: 50px;
+            border: 1px solid;
+        }
+
+        .followBtn{
+            /* padding: 0px 20px; */ 
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 16px;
+            margin-bottom: 19px;
+            margin-left: 100px;
+            background-color: white;
+            border: 2px solid rgb(0, 213, 224);
+            border-radius: 10px;
+            color: rgb(0, 213, 224);
+            font-family: "Roboto";
+            cursor: pointer;
+        }
+
+        .postImg img{
+            width: 100%;
+            height: 380px;
+        }
+
+        .like{
+            padding-left: 10px;
+            padding-top: 5px;
+            display: flex;
+            gap:20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .dblHeart{
+            font-size: 55px;
+            color: white;
+            transform: translate(230px, 0px) scale(1);
+            opacity: 0;
+            transition: transform ease-in-out 0.4s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dblHeart">
+        <i class="ri-heart-3-fill"></i>
+    </div>
+    <div class="main">
+        <div class="header">
+            <img class="profile" src="https://scontent.flhe7-2.fna.fbcdn.net/v/t39.30808-1/435988759_3621535801450522_8197609043798677538_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeEPZ9pthORishyWIQvXuK4LB8ktH8jfD3gHyS0fyN8PeGREemCcJNgC2dHGcRpfpsD9dd37D23XpmWzfg3sTY2l&_nc_ohc=sI2qrlr5zJUQ7kNvwHHQTdE&_nc_oc=AdlULeAnfF2nbavjoI2oYJeQEJfJUFmWpSyNlaECCqsVLEWRrQko66KZmsbrBHL6jz8&_nc_zt=24&_nc_ht=scontent.flhe7-2.fna&_nc_gid=i26tl5JNhFIKHYXOaYd4iQ&oh=00_AfEPkjgzC-rbg3LQaqxjwb5mXRBv80cLj7hpLOPISrS_sw&oe=6817FE19" alt="">
+            <p class="Username"> Waleed Afzal </p>
+            <button class="followBtn">Follow</button>
+            
+        </div>
+        <div class="postImg">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQG34hJBUurQrw/feedshare-shrink_800/feedshare-shrink_800/0/1702555731107?e=2147483647&v=beta&t=rEvrZLjh_PcxR5dOs1h_0YKk2aRPSZHXju4bdpg_peA" alt="">
+        </div>
+        <div class="like">
+            <i class="ri-heart-line"></i>
+            <i class="ri-chat-3-line"></i>
+            <i class="ri-send-plane-line"></i>
+        </div>
+    </div>
+        
+
+    <script>
+        var love = document.querySelector(".dblHeart");
+        var postImg = document.querySelector(".postImg");
+    
+        postImg.addEventListener("dblclick", function () {
+            love.style.opacity = 1;
+            love.style.transform = "translate(230px, 0px) scale(1.5)";
+    
+            setTimeout(() => {
+                love.style.opacity = 0;
+                love.style.transform = "translate(230px, 0px) scale(1)";
+            }, 1000);
+        });
+    </script>
+    
+</body>
+</html>
