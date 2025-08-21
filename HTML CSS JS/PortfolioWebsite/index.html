@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waleed's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="assets/icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="header">
+        <h3 class="logo"><a href="index.html">Waleed Afzal</a></h3>
+        <!-- <div class="socialIcon">
+            <a href="www.linkedin.com/in/digiwaleed" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="www.github.com/beastwaleed" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon">
+        </div> -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button><a href="assets/Waleed Resume.pdf" download>Resume <i id="downloadIcon"
+                                class="ri-download-2-line"></i></a></button></li>
+            </ul>
+        </nav>
+        <button id="mobileButton"><a href="assets/Waleed Resume.pdf" download>Resume <i id="downloadIcon"
+                    class="ri-download-2-line"></i></a></button>
+    </header>
+
+    <div class="hero">
+        <h2>Hi👋 , I am Waleed Afzal</h2>
+        <div class="image"></div>
+        <p>I am</p>
+    </div>
+        <!-- <h2 class="changingSkills">Frontend Developer 💻 | Graphic Designer 🎨 </h2> -->
+        <div id="moving-text">
+
+            <div class="con">
+                <h1>FRONTEND DEVELOPER</h1>
+                <div class="circle"></div>
+                <h1>GRAPHIC DESIGNER</h1>
+                <div class="circle"></div>
+                <h1>DIGITAL MARKETER</h1>
+                <div class="circle"></div>
+            </div>
+            <div class="con">
+                <h1>FRONTEND DEVELOPER</h1>
+                <div class="circle"></div>
+                <h1>GRAPHIC DESIGNER</h1>
+                <div class="circle"></div>
+                <h1>DIGITAL MARKETER</h1>
+                <div class="circle"></div>
+            </div>
+            <div class="con">
+                <h1>FRONTEND DEVELOPER</h1>
+                <div class="circle"></div>
+                <h1>GRAPHIC DESIGNER</h1>
+                <div class="circle"></div>
+                <h1>DIGITAL MARKETER</h1>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+    <div class="breaker"></div>
+
+    <!-- About SECTION -->
+    <div id="about" class="about">
+        <h2>About Me</h2>
+        <div class="aboutContent">
+            <div class="leftAbout">
+                <div class="imageSection"></div>
+            </div>
+            <div class="rightAbout">
+                <h3>A bit about me</h3>
+                <p>I'm a Computer Science student at FAST NUCES with a strong interest in web development and software
+                    programming. I have hands-on experience in creating responsive websites using HTML, CSS, and
+                    JavaScript,
+                    React JS, Next JS along with a good understanding of C++, Python, SQL, and basic Assembly. I've
+                    worked
+                    on different academic and personal projects, including a tailoring website, game store system,
+                    expense
+                    tracker, and a mini operating system. I'm always eager to learn new technologies, improve my skills,
+                    and
+                    build useful, user-friendly applications.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div id="projects" class="breaker"></div>
+
+    <h2 class="projectHeading">Projects</h2>
+    <div class="projects">
+        <div class="cardsContainer">
+            <img src="assets/project1.png" alt="project">
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Sundown Studio Website</p>
+                <p class="details">Created a Business Website for a studio focused on creating unique, end-to-end
+                    experiences and environments.</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://sundownstudioproject.netlify.app/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+        <div class="cardsContainer">
+            <img src="assets/project2.png" alt="project">
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Digital Designer's Portfolio</p>
+                <p class="details">Created a Portfolio website for a digital desginer from Germany.</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://portfolioprojectwebsite.netlify.app/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+
+        <div class="cardsContainer">
+            <img src="assets/project3.png" alt="project">
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Business Website Development</p>
+                <p class="details">Created a business website for a company in UAE promoting their digital marketing services.</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://elitesolutionsmarketing.net/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+
+        <div class="cardsContainer">
+            <img src="assets/project4.png" alt="project">
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Two Good Co.</p>
+                <p class="details">Created a website for a company thriving for a good cause and want to bring up a
+                    change in the environment/p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://twogoodproject.netlify.app/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+        <div class="cardsContainer">
+            <img src="assets/project5.png" alt="project">
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>Wordpress</li>
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+                <p class="title">Custom Tailoring Website</p>
+                <p class="details">Created a custom tailoring Ecommerce website using Wordpress and Tech Stack</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="http://www.geniustailors.com">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+        <div class="cardsContainer">
+            <img src="assets/project6.png" alt="project">
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Live Weather Update Project </p>
+                <p class="details">Created a live weather updated website project using open weather API</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://openweatherliveproject.netlify.app/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+        <div class="cardsContainer">
+            <div class="containerImg">
+                <img src="assets/project7.png" alt="project">
+            </div>
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Fashion Ecommerce Website</p>
+                <p class="details">Created a Fashion Ecommerce Website using HTML CSS JS Tailwind for a dynamic Front
+                    end.</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="http://www.abayaforyou.pk">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+        <div class="cardsContainer">
+            <div class="containerImg">
+                <img src="assets/project8.png" alt="project">
+            </div>
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Monkey Jump Game</p>
+                <p class="details">Created a fun and interactive game to play when you are bored!</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://jumpingmonkeygame.netlify.app/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+
+        <div class="cardsContainer">
+            <div class="containerImg">
+                <img src="assets/project9.png" alt="project">
+            </div>
+            <div class="description">
+                <div class="tags">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <p class="title">Text To Speech Generator</p>
+                <p class="details">Created a live realtime text to speech generator</p>
+            </div>
+            <div class="buttons">
+                <button> <a href="https://ttsgenerator.netlify.app/">Live Preview </a></button>
+                <button> <a href="http://github.com/beastwaleed">Source Code/Github </a></button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="skills" class="breaker"></div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+        <div class="skills-header">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-container">
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png" alt=""
+                            class="skills-icons">
+                    </div>
+                    <h3>HTML 5</h3>
+                </div>
+            </div>
+
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt=""
+                            class="skills-icons">
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+            </div>
+
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/js.webp" alt="" class="skills-icons">
+                    </div>
+                    <h3>JAVASCRIPT</h3>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/react.png" alt="" class="skills-icons">
+                    </div>
+                    <h3>REACT</h3>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/C.png" alt="" class="skills-icons">
+                    </div>
+                    <h3>C</h3>
+                </div>
+            </div>
+
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/Cpp.png" alt="" class="skills-icons">
+                    </div>
+                    <h3>C++</h3>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/sql.png" alt="" class="skills-icons">
+                    </div>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/wordpress.png" alt="" class="skills-icons">
+                    </div>
+                    <h3>WordPress</h3>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/ps.webp" alt="" class="skills-icons">
+                    </div>
+                    <h3>Photoshop</h3>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <div class="skills-title">
+                    <div class="skills-img">
+                        <img src="assets/Illustrator.webp" alt="" class="skills-icons">
+                    </div>
+                    <h3>Illustrator</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="services" class="breaker"></div>
+
+
+    <div class="services">
+        <div class="services-header">
+            <h1>Services</h1>
+        </div>
+        <div class="servContainers">
+
+            <div class="services-container">
+                <i class="ri-html5-fill"></i>
+                <h3>Web development</h3>
+                <p>Design and scale custom, high-performing web solutions that engage users and deliver seamless
+                    experience
+                    at every touchpoint</p>
+                <button><a href="https://wa.me/+923243041248"> Get Started <i class="ri-arrow-right-line"></i>
+                    </a></button>
+            </div>
+            <div class="services-container">
+                <i class="ri-brush-ai-line"></i>
+                <h3>Graphic Designing</h3>
+                <p>Our graphic design services cover a wide range of products: brochures, business cards, publications,
+                    posters and billboards</p>
+                <button><a href="https://wa.me/+923243041248"> Get Started <i class="ri-arrow-right-line"></i>
+                    </a></button>
+
+            </div>
+            <div class="services-container">
+                <i class="ri-mac-line"></i>
+                <h3>Digital Marketing</h3>
+                <p>Digital marketing services encompass all online marketing efforts to promote a brand, product, or
+                    service.</p>
+                <button><a href="https://wa.me/+923243041248"> Get Started <i class="ri-arrow-right-line"></i>
+                    </a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="breaker"></div>
+
+    <div class="contact">
+        <div class="contact-header">
+            <h1>Contact</h1>
+        </div>
+
+        <div class="main-contact">
+            <div class="contact-container">
+                <div class="upper">
+                    <img src="assets/profile.png" alt="">
+                    <div class="work">
+                        <div class="greenDot"></div>
+                        <h4>Available for Work </h4>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="bottom-left">
+                        <h2 class="contactpart2">Drop me a line or say 👋 on social networks</h2>
+                        <p>Whether you're a business or startup seeking to transform your ideas into exceptional web
+                            applications, I'm here to collaborate and bring your vision to life. Feel free to reach out,
+                            and
+                            let's turn your ideas into reality! 💻📱</p>
+                    </div>
+                    <div class="bottom-right">
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/digiwaleed"><i class="ri-linkedin-box-fill"></i></a>
+                            <a href="https://www.github.com/beastwaleed"><i class="ri-github-fill"></i></a>
+                            <a href="https://wa.me/+923243041248"><i class="ri-whatsapp-line"></i></a>
+                        </div>
+                        <div class="email"><a target="_blank" href="https://mail:waleedafzalshaikh@gmail.com">waleedafzalshaikh@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>
