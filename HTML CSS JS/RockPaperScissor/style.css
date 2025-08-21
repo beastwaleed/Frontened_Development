@@ -1,0 +1,179 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f0f0f0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+#rock {
+    background-color: #f44336;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#rock:hover {
+    background-color: #d32f2f;
+}
+
+#paper {
+    background-color: #2196F3;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#paper:hover {
+    background-color: #1976D2;
+}
+
+#scissor {
+    background-color: #4CAF50;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#scissor:hover {
+    background-color: #388E3C;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #313131;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px
+}
+
+.playerScore {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    background-color: tomato;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+.computerScore {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    background-color: #2196F3;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socials a {
+    font-size: 30px;
+    color: rgb(61, 61, 61);
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: tomato;
+}
+
+.waleed {
+    padding-top: 50px;
+    color: rgb(61, 61, 61);
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1rem;
+        padding-top: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .btns {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #rock,
+    #paper,
+    #scissor {
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+    }
+
+    #result {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .scoreContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .playerScore,
+    .computerScore {
+        font-size: 1.2rem;
+        padding: 4px 15px;
+    }
+
+    .socials a {
+        font-size: 24px;
+    }
+
+    .waleed {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+}
